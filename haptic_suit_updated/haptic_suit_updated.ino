@@ -1,6 +1,8 @@
 // recive charchters from the monitor
 char rx_byte = 0;
 String rx_str = "";
+
+// varible for vibrator motor
 int vibrator = 0;
 
 unsigned long keyPrevMillis = 0;
@@ -14,7 +16,6 @@ int Panic_confirm;
 
 // called when button is kept pressed for more than 1 second
 void longKeyPress() {
-  //  Serial.println("long");
   Serial.println("1");
   Panic_confirm = 1;
 }
@@ -31,8 +32,8 @@ void keyRelease() {
   if (longKeyPressCount >= longKeyPressCountMax) {
     longKeyPress();
   }
-
 }
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -84,7 +85,6 @@ void loop() {
 
   if (Panic_confirm == 1)
   {
-
     // Serial.println("entered into panic satae");
     if (digitalRead(2) == HIGH)
     {
