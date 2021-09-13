@@ -85,7 +85,7 @@ void loop() {
 
   if (Panic_confirm == 1)
   {
-    // Serial.println("entered into panic satae");
+    Serial.println("1");
     if (digitalRead(2) == HIGH)
     {
       delay(10);
@@ -117,43 +117,43 @@ void loop() {
 
   if (vibrator == 1)
   {
-    vibrator_on(3);
+    vibrator_on(A0);
   }
   if (vibrator == 2)
   {
-    vibrator_on(4);
+    vibrator_on(7);
   }
   if (vibrator == 3)
   {
-    vibrator_on(5);
+    vibrator_on(4);
   }
   if (vibrator == 4)
   {
-    vibrator_on(7);
+    vibrator_on(6);
   }
   if (vibrator == 5)
   {
-    vibrator_on(6);
+    vibrator_on(3);
   }
   if (vibrator == 6)
   {
-    vibrator_on(8);
+    vibrator_on(5);
   }
   if (vibrator == 7)
   {
-    vibrator_on(9);
+    vibrator_on(8);
   }
   if (vibrator == 8)
   {
-    vibrator_on(10);
+    vibrator_on(9);
   }
   if (vibrator == 9)
   {
-    vibrator_on(11);
+    vibrator_on(10);
   }
   if (vibrator == 10)
   {
-    vibrator_on(A0);
+    vibrator_on(11);
   }
   if (vibrator == 11)
   {
